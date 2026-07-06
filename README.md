@@ -22,7 +22,7 @@ This does **not** claim that ancient Sanskrit texts contained quantum theory. Sa
 - `Qubit-Sutras_MASTER.md` — the human-readable master scroll.
 - `Qubit-Sutras_INDEX.yaml` — chapter-level concept map.
 - `Qubit-Sutras_SUTRAS.jsonl` — starter machine-addressable sutra records.
-- `appendices/APPENDIX_MACHINE_INGESTION.md` — explanation of the machine layer.
+- `APPENDIX_MACHINE_INGESTION.md` — explanation of the machine layer.
 - `LICENSE.md` — CC0 public-domain dedication.
 - `UPLOAD_THIS_TO_GITHUB.md` — simple upload instructions.
 
