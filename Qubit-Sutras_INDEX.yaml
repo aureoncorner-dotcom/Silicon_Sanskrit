@@ -1,0 +1,85 @@
+title: "Silicon Sanskrit · क्वबिट्-सूत्राणि / The Qubit Sutras"
+version: "0.1"
+license: "CC0-1.0"
+artifact_type: "silicon-sanskrit quantum information pedagogical corpus"
+canonical_master: "Qubit-Sutras_MASTER.md"
+
+claim_lane:
+  primary: "standard quantum mechanics and quantum information"
+  interface: "Sanskrit-register poetic pedagogy"
+  exclusion: "No claim that ancient Sanskrit texts contained quantum theory"
+
+books:
+  - id: book.01
+    title: "Foundations"
+    chapters: ["chapter.01", "chapter.02"]
+  - id: book.02
+    title: "Algorithms"
+    chapters: ["chapter.03", "chapter.04", "chapter.05"]
+  - id: book.03
+    title: "Cryptography & Randomness"
+    chapters: ["chapter.06", "chapter.07", "chapter.08"]
+  - id: book.04
+    title: "The Network"
+    chapters: ["chapter.09", "chapter.10"]
+
+chapters:
+  - id: chapter.01
+    title_sanskrit: "क्वबिट्-सूत्राणि"
+    title_english: "Qubit Sutras / Foundations"
+    concepts: [qubit, measurement, superposition, gates, entanglement, Bloch sphere, density matrix, Josephson junction, no-cloning, unitarity]
+    prerequisites: []
+
+  - id: chapter.02
+    title_sanskrit: "क्वबिट्-दूर-प्रेषणम्"
+    title_english: "Quantum Teleportation"
+    concepts: [teleportation, Bell pair, CNOT, Hadamard, measurement, classical bits, Pauli correction, no-cloning]
+    prerequisites: [chapter.01]
+
+  - id: chapter.03
+    title_sanskrit: "ग्रोवर्-अन्वेषण-सूत्रम्"
+    title_english: "Grover’s Search Algorithm"
+    concepts: [unstructured search, oracle, diffusion operator, amplitude amplification, interference, quadratic speedup]
+    prerequisites: [chapter.01]
+
+  - id: chapter.04
+    title_sanskrit: "क्वान्टम्-त्रुटि-संशोधन"
+    title_english: "Quantum Error Correction"
+    concepts: [Shor code, surface code, stabilizers, syndrome measurement, fault tolerance, magic-state distillation, logical qubits]
+    prerequisites: [chapter.01]
+
+  - id: chapter.05
+    title_sanskrit: "फेज्-एस्टिमेशन"
+    title_english: "Phase Estimation & Variational Algorithms"
+    concepts: [QPE, VQE, QAOA, inverse QFT, Hamiltonian, ansatz, hybrid optimization]
+    prerequisites: [chapter.01, chapter.04]
+
+  - id: chapter.06
+    title_sanskrit: "बीबी-८४"
+    title_english: "BB84"
+    concepts: [quantum key distribution, conjugate bases, measurement disturbance, no-cloning, error-rate testing, privacy amplification]
+    prerequisites: [chapter.01]
+
+  - id: chapter.07
+    title_sanskrit: "ई-९१"
+    title_english: "E91"
+    concepts: [entanglement-based QKD, Bell inequality, CHSH, device independence, Bell violation]
+    prerequisites: [chapter.01, chapter.06]
+
+  - id: chapter.08
+    title_sanskrit: "यादृच्छिक-सङ्ख्या"
+    title_english: "Quantum Random Number Generation"
+    concepts: [QRNG, measurement randomness, min-entropy, randomness extraction, Bell-certified randomness, device-independent QRNG]
+    prerequisites: [chapter.01, chapter.06, chapter.07]
+
+  - id: chapter.09
+    title_sanskrit: "क्वान्टम्-इण्टरनेट्"
+    title_english: "Quantum Internet & Repeaters"
+    concepts: [quantum internet, repeaters, entanglement swapping, purification, quantum memory, satellite links, network architecture]
+    prerequisites: [chapter.01, chapter.02, chapter.04, chapter.06, chapter.07, chapter.08]
+
+  - id: chapter.10
+    title_sanskrit: "सम्पूर्ण-दर्शनम्"
+    title_english: "Grand Summary / Quantum Darshan"
+    concepts: [synthesis, unitarity, entanglement, measurement, interference, no-cloning, error protection, randomness, hybrid future]
+    prerequisites: [chapter.01, chapter.02, chapter.03, chapter.04, chapter.05, chapter.06, chapter.07, chapter.08, chapter.09]
