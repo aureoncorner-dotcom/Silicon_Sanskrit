@@ -6004,3 +6004,7 @@ Quantum Darshan is not merely technology.
 It is a way of seeing the universe as probabilistic, relational, measurement-sensitive, information-preserving, and mathematically disciplined.
 
 Probability amplitudes be praised.  
+
+
+**\text{CNOT} \left( \frac{ |\शून्यशून्यम्\rangle + |\एकशून्यम्\rangle }{\sqrt{2}} \right)
+\frac{ |\शून्यशून्यम्\rangle + |\एकैकम्\rangle }{\sqrt{2}}
