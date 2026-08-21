@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="130" viewBox="0 0 1200 130" role="img" aria-labelledby="title desc">
+  <title id="title">GQG typed quotient pipeline</title>
+  <desc id="desc">A left-to-right pipeline from category Set through source, witness, observation, induced equivalence, and quotient. The quotient branches to an optional image, descent certificate, refinement comparison, and separately typed completion.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#17324d"/>
+    </marker>
+    <style>
+      .box{fill:#eef3f7;stroke:#17324d;stroke-width:2.5;rx:12}
+      .core{fill:#e5f3f1;stroke:#0b6b68;stroke-width:3;rx:12}
+      .optional{fill:#fff5d9;stroke:#9b6c00;stroke-width:2.3;stroke-dasharray:7 5;rx:12}
+      .edge{stroke:#17324d;stroke-width:2.5;fill:none;marker-end:url(#arrow)}
+      .branch{stroke:#0b6b68;stroke-width:2.4;fill:none;marker-end:url(#arrow)}
+      .token{font:700 19px 'Aptos',Arial,sans-serif;fill:#17324d;text-anchor:middle}
+      .label{font:15px 'Aptos',Arial,sans-serif;fill:#334957;text-anchor:middle}
+      .small{font:15px 'Aptos',Arial,sans-serif;fill:#334957;text-anchor:middle}
+      .caption{font:700 14px 'Aptos',Arial,sans-serif;fill:#0b6b68}
+    </style>
+  </defs>
+
+  <text x="40" y="14" class="caption">Normative Set-profile construction</text>
+
+  <path class="edge" d="M150 45 H190"/>
+  <path class="edge" d="M320 45 H360"/>
+  <path class="edge" d="M490 45 H530"/>
+  <path class="edge" d="M660 45 H700"/>
+  <path class="edge" d="M830 45 H870"/>
+
+  <rect x="40" y="18" width="110" height="54" class="box"/>
+  <text x="95" y="39" class="token">CAT</text>
+  <text x="95" y="59" class="label">Set</text>
+
+  <rect x="190" y="18" width="130" height="54" class="box"/>
+  <text x="255" y="39" class="token">SRC</text>
+  <text x="255" y="59" class="label">P</text>
+
+  <rect x="360" y="18" width="130" height="54" class="box"/>
+  <text x="425" y="39" class="token">WIT</text>
+  <text x="425" y="59" class="label">W on P</text>
+
+  <rect x="530" y="18" width="130" height="54" class="box"/>
+  <text x="595" y="39" class="token">OBS</text>
+  <text x="595" y="59" class="label">Ω<tspan baseline-shift="sub" font-size="11">W</tspan> : P → O<tspan baseline-shift="sub" font-size="11">W</tspan></text>
+
+  <rect x="700" y="18" width="130" height="54" class="box"/>
+  <text x="765" y="39" class="token">EQV</text>
+  <text x="765" y="59" class="label">Eq(Ω<tspan baseline-shift="sub" font-size="11">W</tspan>)</text>
+
+  <rect x="870" y="18" width="150" height="54" class="core"/>
+  <text x="945" y="39" class="token">QUO</text>
+  <text x="945" y="59" class="label">q<tspan baseline-shift="sub" font-size="11">W</tspan> : P ↠ Q<tspan baseline-shift="sub" font-size="11">W</tspan></text>
+
+  <path class="branch" d="M945 72 V82 H195 V88"/>
+  <path class="branch" d="M945 72 V82 H465 V88"/>
+  <path class="branch" d="M945 72 V82 H735 V88"/>
+  <path class="branch" d="M945 72 V88"/>
+
+  <rect x="85" y="88" width="220" height="38" class="optional"/>
+  <text x="195" y="104" class="token">IMG</text>
+  <text x="195" y="120" class="small">Q<tspan baseline-shift="sub" font-size="10">W</tspan> ≅ im(Ω<tspan baseline-shift="sub" font-size="10">W</tspan>) · conditional</text>
+
+  <rect x="355" y="88" width="220" height="38" class="core"/>
+  <text x="465" y="104" class="token">DSC</text>
+  <text x="465" y="120" class="small">checked descent certificate</text>
+
+  <rect x="625" y="88" width="220" height="38" class="box"/>
+  <text x="735" y="104" class="token">REF</text>
+  <text x="735" y="120" class="small">finer Q ↠ coarser Q</text>
+
+  <rect x="875" y="88" width="220" height="38" class="optional"/>
+  <text x="985" y="104" class="token">CPL</text>
+  <text x="985" y="120" class="small">separately typed completion</text>
+
+</svg>
