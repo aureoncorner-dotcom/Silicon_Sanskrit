@@ -1,0 +1,137 @@
+Qubit Sutras. Read-Aloud Edition. Version zero point three.
+
+This is a teaching work about modern quantum information, expressed through a Sanskrit-style poetic register. The register is a memory aid. The physics comes from the stated mathematical models. The written edition contains the equations, examples, and research references.
+
+Om chit shunya eka sambhaavyataayai namah.
+
+Probability amplitudes be praised. Keep the audit trail.
+
+Chapter one. The qubit, the phase, and the record.
+
+Not zero alone. Not one alone.
+
+A pure qubit has two complex amplitudes in a chosen basis. Their squared magnitudes give the probabilities for that measurement. A general qubit, including a noisy mixture, is described by a density operator.
+
+The basis matters. A state that looks uncertain in one basis can give a definite result in another.
+
+Here is the useful experiment. A plus state and a fifty-fifty mixture both look like fair coins when measured in the zero-one basis. Apply a Hadamard gate first. The plus state then gives zero every time. The mixture stays fair. Matching totals did not mean matching states.
+
+Hadamard changes the basis. X flips zero and one. Z changes relative phase when both amplitudes are present. CNOT flips a target when its control is one; it can create entanglement from suitable inputs.
+
+One measurement writes one result. Repeated preparations reveal a distribution. A single specimen does not give you unlimited copies to inspect.
+
+Monkey gloss. Two ledgers can show the same totals while their routing instructions differ. Change the sorting basis; the difference appears.
+
+Chapter two. Teleportation.
+
+Entanglement is the bridge. Two bits name the correction.
+
+Alice has an unknown qubit. Alice and Bob also share one Bell pair. Alice applies her gates and measures her two qubits. She sends Bob two ordinary classical bits. Bob uses those bits to correct his qubit.
+
+In the ideal protocol, Bob receives the input state, including its relative phase. Alice's input and the shared Bell pair are consumed. Two usable copies do not remain.
+
+Before Alice's classical result is available, Bob's local density operator is the same maximally mixed state for every input. Entanglement alone carries no controllable faster-than-light message.
+
+Monkey gloss. The receipt names the correction. It does not contain the letter.
+
+Chapter three. Grover search.
+
+Open the routes. Mark the phase. Interfere. Stop at the right time.
+
+Grover's algorithm begins with a uniform superposition. An oracle changes the phase of the marked answer. A second reflection turns that phase pattern into a higher chance of measuring the answer.
+
+With four candidates and one marked answer, one ideal Grover iteration succeeds with certainty. A second full iteration drops the success probability back to one quarter. More rounds are not always better.
+
+For a large unstructured space, the oracle-query count grows like the square root of the number of candidates. That is a quadratic speedup. Building the oracle, preparing data, and protecting the computation still cost resources.
+
+Monkey gloss. Mark the envelope, sort once, stop. Sorting again can bury the answer.
+
+Chapter four. Error correction.
+
+Read the parity. Protect the letter.
+
+A logical qubit spreads its information across physical qubits. Commuting checks produce a syndrome. A classical decoder uses that record and a noise model to choose a recovery.
+
+The syndrome does not directly reveal the logical amplitudes. It also does not always name one unique error. Some different errors share a syndrome. Some logical errors pass the checks.
+
+A three-qubit repetition code can correct one bit flip, under its stated model. It cannot correct general phase errors. The nine-qubit Shor code protects against an arbitrary error on one physical qubit.
+
+For a specified fault-tolerant scheme operating below its noise threshold, greater code distance can suppress logical failure. The threshold depends on the circuit, noise, and decoder.
+
+Monkey gloss. Read the bent corner. A clean corner does not prove the whole message survived.
+
+Chapter five. Phase estimation and the noisy workshop.
+
+Quantum phase estimation estimates an eigenphase using controlled operations and interference. Three ideal precision qubits can return three eighths exactly. They cannot represent one third exactly; that case produces a distribution of estimates.
+
+The variational quantum eigensolver prepares a parameterized state, measures its energy, and asks a classical optimizer to improve the parameters. The exact energy expectation cannot lie below the true ground energy. A finite measurement estimate can fluctuate, and a restricted circuit may miss the ground state.
+
+QAOA alternates problem and mixing operations. Decide whether the objective is a cost to minimize or a reward to maximize. The sign is part of the algorithm. A small circuit that works on one example does not establish a general advantage.
+
+Monkey gloss. QPE is the cathedral. VQA is the noisy workshop. Name the quantity, fix the direction, then let the optimizer move.
+
+Chapter six. BB84 and the crooked stamp.
+
+Alice chooses random bits and bases. Bob chooses measurement bases. They announce bases over an authenticated classical channel, keep matching rounds, and test a sample for errors. Disclosed test bits do not become secret key bits.
+
+In an ideal intercept-resend example, Eve guesses the wrong basis half the time. In those rounds, Bob gets the wrong bit half the time. One half times one half gives a twenty-five percent error rate in the sifted key.
+
+That number describes this attack model. It does not identify an intruder, and it is not a universal acceptance threshold. Ordinary noise can also cause errors. Reconciliation, leakage accounting, finite statistics, and privacy amplification belong in the security proof.
+
+Monkey gloss. A crooked stamp tells you to test the route. It does not name the hand.
+
+Chapter seven. E91 and the Bell witness.
+
+Entangled pairs connect the measurements. Selected correlations test a Bell inequality. In an ideal CHSH example, local models with independent setting choices are bounded by two. Quantum correlations can reach two times the square root of two.
+
+A supported violation is evidence about the correlations under the test's assumptions. It does not send a message by itself. It does not automatically give a device-independent secret key. Authentication, independent settings, losses, finite statistics, and a suitable security proof still matter.
+
+Monkey gloss. The witness signs the correlation. The proof decides what that signature permits.
+
+Chapter eight. Randomness and the duplicate receipt.
+
+A quantum random number generator measures a source and estimates usable unpredictability under a model. The device, side information, and extractor belong in that account.
+
+Imagine a perfectly balanced stream of bits that someone else already knows. Your histogram is fair. Your bits are not private. Conditional entropy distinguishes those two facts.
+
+An extractor can turn a valid entropy bound into approximately uniform output. It cannot manufacture entropy that is absent. Passing a statistical test alone does not establish private quantum randomness.
+
+Pseudo-random generators use algorithms and seeds. Classical physical entropy sources are another category. Do not put every non-quantum source in the same box.
+
+Monkey gloss. The universe rolls the dice. Check the machine that counts them, and who else holds the receipt.
+
+Chapter nine. The network.
+
+Build short links. Swap in the middle. Send the record.
+
+With two Bell pairs, a middle node can consume its halves in a Bell measurement. Conditioned on the result, the distant endpoints share a Bell state. The classical result names its correction or Pauli frame.
+
+Ignore that result, and the averaged endpoint state is not a known usable Bell pair. The receipt matters.
+
+Quantum repeaters cannot simply copy an unknown qubit. Different architectures trade entanglement swapping, memories, purification, error correction, and photonic resources. Adding segments alone does not guarantee a better rate. Loss, timing, fidelity, and resources decide the engineering result.
+
+Monkey gloss. Join two routes. Consume the middle tickets. Send the receipt that names the new bond.
+
+Chapter ten. Keep the verse. Attach the conditions.
+
+Not zero alone.
+Not one alone.
+In the chosen basis, amplitudes open routes.
+Measurement writes one record.
+Entanglement supports the bridge.
+Classical messages name the correction.
+Interference raises and lowers the chance.
+The stopping time matters.
+The syndrome guides recovery.
+The proof bounds the key.
+The entropy account bounds the randomness.
+The network keeps its receipts.
+
+Closed-system unitaries preserve inner products and can be reversed. Measurement and noise need their own channel description. A promise of preservation belongs with the dynamics that justify it.
+
+Closing.
+
+The Sanskrit register, the route, the letter, and the ledger are teaching language. The mathematics carries the operational claims.
+
+Probability amplitudes be praised.
+The ledger remains.
